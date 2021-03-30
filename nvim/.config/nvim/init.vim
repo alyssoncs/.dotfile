@@ -120,6 +120,9 @@ let g:asmsyntax = 'nasm'
 	set splitbelow
 	set splitright
 
+" command line mode mappings
+	cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 " copy/paste
 	set guioptions=a
 	vnoremap <C-c> "+y
