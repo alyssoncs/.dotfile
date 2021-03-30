@@ -85,7 +85,6 @@ let g:asmsyntax = 'nasm'
 " Goyo
 	map <leader>f :Goyo \| set linebreak<CR>
 
-
 " jump to the last position when reopening a file
 	if has("autocmd")
 		au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -103,15 +102,14 @@ let g:asmsyntax = 'nasm'
 	set shiftwidth=8
 	set softtabstop=4
 
-
 	set cursorline
 	set ttyfast
 
 " easier buffer navigation
-nnoremap <silent> [b :bprevious<CR>
-nnoremap <silent> ]b :bnext<CR>
-nnoremap <silent> [B :bfirst<CR>
-nnoremap <silent> ]B :blast<CR>
+	nnoremap <silent> [b :bprevious<CR>
+	nnoremap <silent> ]b :bnext<CR>
+	nnoremap <silent> [B :bfirst<CR>
+	nnoremap <silent> ]B :blast<CR>
 
 " easier split navigation
 	nnoremap <C-J> <C-W><C-J>
@@ -123,7 +121,7 @@ nnoremap <silent> ]B :blast<CR>
 	set splitright
 
 " copy/paste
-	set go=a
+	set guioptions=a
 	vnoremap <C-c> "+y
 	map <C-p> "+P
 
