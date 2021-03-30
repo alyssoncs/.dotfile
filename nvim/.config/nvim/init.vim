@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'ldx/vim-indentfinder'
 	Plug 'junegunn/goyo.vim'
 	Plug 'sheerun/vim-polyglot'
-	Plug 'gruvbox-community/gruvbox'
 	Plug 'junegunn/limelight.vim'
 	Plug 'lervag/vimtex'
 	Plug 'tpope/vim-surround'
@@ -72,14 +71,8 @@ let g:asmsyntax = 'nasm'
 	set wildmenu
 
 " colorscheme
-	" gruvbox
-	set background=dark
-	set termguicolors
-	let g:gruvbox_contrast_dark = 'soft'
-	let g:gruvbox_invert_selection = '0'
-	let g:gruvbox_improved_warnings	= '1'
-	let g:gruvbox_guisp_fallback = "bg"
 	" monokai
+	set termguicolors
 	let g:monokai_term_italic = 1
 	let g:monokai_gui_italic = 1
 	colorscheme monokai
