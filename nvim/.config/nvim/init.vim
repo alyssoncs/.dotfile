@@ -120,6 +120,10 @@ let g:asmsyntax = 'nasm'
 	set splitbelow
 	set splitright
 
+" line navigation
+	nnoremap j gj
+	nnoremap k gk
+
 " command line mode mappings
 	cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
