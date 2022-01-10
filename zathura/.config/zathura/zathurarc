@@ -1,5 +1,0 @@
-set selection-clipboard "clipboard"
-set statusbar-home-tilde true
-set window-title-basename true
-set database "plain"
-set guioptions "s"
