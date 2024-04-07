@@ -1,5 +1,8 @@
+Plug 'tpope/vim-surround'
+
 inoremap jk <ESC>
 inoremap kj <ESC>
+set timeoutlen=100
 
 " easier split navigation
         nnoremap <C-J> <C-W><C-J>
