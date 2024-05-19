@@ -83,11 +83,6 @@ let g:asmsyntax = 'nasm'
 	let g:monokai_gui_italic = 1
 	colorscheme monokai
 
-" yaifa
-	let g:yaifa_expandtab   = 0
-	let g:yaifa_shiftwidth  = 8
-	let g:yaifa_tabstop     = 8
-
 " Goyo
 	map <leader>f :Goyo \| set linebreak<CR>
 
@@ -101,12 +96,9 @@ let g:asmsyntax = 'nasm'
   		filetype plugin indent on
 	endif
 
-	set autoindent cindent      " smarter indent behavior
-	set noexpandtab
-	set smarttab                    " make tab and backspace smarter
-	set tabstop=8
-	set shiftwidth=8
-	set softtabstop=4
+	set expandtab
+	set tabstop=4
+	set shiftwidth=4
 
 	set cursorline
 	set ttyfast
