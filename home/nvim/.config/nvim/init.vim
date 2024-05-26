@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/limelight.vim'
 	Plug 'lervag/vimtex'
 	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-repeat'
 	Plug 'zhou13/vim-easyescape'
 	Plug 'crusoexia/vim-monokai'
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
